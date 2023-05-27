@@ -498,22 +498,15 @@ a{
 .base-1>div:last-child p{
     margin-top: 20px;
 }
-.base-1>div>input:first-child{
-    border: 1px solid #ffffff;
-    border-radius: 12px;
-    margin-top:50px ;
-}
-.base-1>div>div{
+ .base-1>div>div{
     border: 1px solid white;
     border-radius: 12px;
     position: relative;
-}
-.base-1>div>div input{
-    background-color: transparent;
-}  
+    width: 70%;
+} 
 .base-1>div>div input[type="button"]{
     color: #2B2B39;
-    font-size: 16px;
+    font-size: 15px;
     border: none;
     padding: 4px 5px;
     border-radius: 8px;
@@ -522,9 +515,16 @@ a{
     top: 0px;
     right: 0px;
 }
-.base-1>div>div input[type="email"]{
-    padding-left: 10px;
-    border: none;
+.button-fill>input[type="text"]{
+    background-color: transparent;
+    width: 100%;
+    border-radius: 10px;
+    padding-left: 15px;
+    color: #ffffff;
+}
+.button-fill>input[type="text"]:focus{
+    outline: none;
+
 }
 footer{
     background-color:#20202D ;
@@ -632,6 +632,9 @@ footer{
         margin: 0px auto;
         width: 70%;
         margin-top: 40px;
+    }
+    .button-fill{
+        margin: 0px auto;
     }
 } 
 @media only screen and (max-width:576px){
